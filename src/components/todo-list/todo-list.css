@@ -1,0 +1,77 @@
+.todo-list {
+  padding: 0px 7px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.todo-list .list-group-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  min-height: 62px;
+  border-top: 2px solid WhiteSmoke;
+  position: relative;
+  width: 100%;
+}
+.todo-list .list-group-item:nth-child(1) {
+  border-top: none;
+}
+/* .toggle-wrapper {
+   position: relative;
+} */
+
+.list-group-item .todo-list-item__toggle,
+.list-group-item .todo-list-item-info {
+  display: flex;
+  align-items: center;
+}
+.list-group-item .todo-list-item__toggle {
+  flex: 0 1 auto !important;
+  margin: 12px 16px 12px 3px;
+}
+.list-group-item .todo-list-item-info {
+  flex: 1 2 1200px !important;
+  margin: 12px 0 12px 3px;
+}
+/* .list-group-item .item-btns-group {
+   flex: 0 0 64px !important;
+}  */
+.list-group-item label .toggle {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.toggle-checked {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+}
+.toggle-checked p {
+  display: none;
+  user-select: none;
+
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  font-size: 21px;
+  font-weight: 400;
+  color: DodgerBlue;
+}
+
+.list-group-item label .toggle:checked ~ .toggle-checked p {
+  display: block;
+}
+
+.list-group-item.hide {
+  display: none;
+}
