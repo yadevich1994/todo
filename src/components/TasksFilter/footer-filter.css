@@ -1,0 +1,21 @@
+.footer__filter {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer__filter div button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: white;
+  color: gray;
+
+  margin: 3px;
+  padding: 3px 7px;
+}
+
+.footer__filter div button.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+.footer__filter div button:hover {
+  border: 1px solid rgba(175, 47, 47, 0.1);
+}

@@ -1,0 +1,9 @@
+.app-title {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+
+  color: rgba(175, 47, 47, 0.15);
+
+  margin: 20px 0;
+}

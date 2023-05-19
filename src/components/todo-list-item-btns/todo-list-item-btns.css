@@ -1,0 +1,35 @@
+.item-btns-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 85px;
+  margin-right: 5px;
+  margin-left: 8px;
+}
+
+.item-btns-group button {
+  width: 30px;
+  height: 40px;
+  border: none;
+  background-color: white;
+
+  color: #cc9a9a;
+  font-size: 19px;
+  cursor: pointer;
+
+  position: relative;
+  top: 2px;
+}
+
+.item-btns-group button:nth-child(1)::after {
+  content: '✎';
+}
+
+.item-btns-group button:nth-child(2)::after {
+  content: '×';
+  font-size: 34px;
+}
+
+.item-btns-group button:hover {
+  color: #af5b5e;
+}
